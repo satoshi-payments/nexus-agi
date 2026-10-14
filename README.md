@@ -1,8 +1,8 @@
 # NEXUS AGI
 
-**Keep your AI agent from repeating a costly mistake.**
+**Intelligence for your AI agents: the critical context, at the moment they decide.**
 
-NEXUS is the shared memory of Claude, ChatGPT, Cursor and any MCP agent. Your decisions, your business rules and what already went wrong come back to the agent before it acts, in this session and in the one three months from now.
+So your agent doesn't repeat a costly mistake. NEXUS gathers what all your agents learn (Claude, ChatGPT, Cursor and any MCP agent) and hands back what matters before the agent acts: your decisions, your business rules and what already went wrong, in this session and in the one three months from now. On Claude Code and Cursor it arrives on its own through hooks; in chat clients the agent asks for it.
 
 - Website: https://nexus.eblas.link · [Español](https://nexus.eblas.link)
 - Remote MCP server: `https://nexus.eblas.link/mcp` (Streamable HTTP, OAuth 2.1)
@@ -19,7 +19,7 @@ An agent's costly mistakes are rarely about intelligence:
 - **It repeats a mistake you already fixed.** You fixed it with Claude; tomorrow Cursor makes it again, because every tool remembers on its own.
 - **It acts on a fact that stopped being true.**
 
-NEXUS gives all your agents one memory: decisions, rules, mistakes and what changed, with validity over time.
+NEXUS gives all your agents one shared source of what matters: decisions, rules, mistakes and what changed, each marked with how it is known and whether it is still valid.
 
 *Illustrative example:* you decide in Claude Code that payment records are archived, never deleted, because accounting audits them. Days later, in Cursor, you ask to "clean up payments older than a year". Cursor recalls the decision from NEXUS and proposes moving them to an archive table instead of running a `DELETE`.
 
